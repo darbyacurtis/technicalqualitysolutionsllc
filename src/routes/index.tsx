@@ -267,12 +267,12 @@ function Booking() {
     <section id="book" className="mx-auto max-w-6xl px-6 py-24">
       <div className="grid gap-12 md:grid-cols-[1fr_1.4fr] md:items-start">
         <div>
-          <p className="text-xs font-medium uppercase tracking-widest text-accent">Book a call</p>
+          <p className="text-xs font-medium uppercase tracking-widest text-accent">BOOK A CONSULTATION</p>
           <h2 className="mt-3 text-4xl text-primary md:text-5xl">
-            Let's talk about your quality program.
+            Let's talk about your quality needs.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Pick a time that works for you. Free 30-minute intro to understand your operation,
+            Pick a time that works for you. We'll schedule a quick call to understand your operation,
             current gaps, and the fastest path forward.
           </p>
           <div className="mt-8 space-y-3 rounded-2xl border border-border bg-card p-6 text-sm">
@@ -280,7 +280,7 @@ function Booking() {
               <Mail className="h-4 w-4 text-accent" /> {EMAIL}
             </a>
             <p className="text-muted-foreground">
-              Prefer email? Send a note and we'll reply within one business day.
+              Prefer messaging instead of a call? Send us a note and we'll reach out as soon as we can
             </p>
           </div>
         </div>
