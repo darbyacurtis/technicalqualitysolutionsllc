@@ -176,7 +176,8 @@ function Services() {
       <div className="max-w-2xl">
         <p className="text-xs font-medium uppercase tracking-widest text-accent">What we do</p>
         <h2 className="mt-3 text-4xl text-primary md:text-5xl">
-          Two regulated industries. One quality standard.
+          Two regulated industries.&nbsp;<br />
+          One quality standard.
         </h2>
         <p className="mt-4 text-muted-foreground">
           We work with growers, processors, co-manufacturers, and consumer brands to translate
