@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import { Leaf, Utensils, ShieldCheck, ClipboardCheck, FlaskConical, BookOpenCheck, ArrowRight, Mail, CheckCircle2 } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 
-https://calendly.com/technicalqualitysolutionsllc/30min
-const CALENDLY_URL = "https://calendly.com/technicalqualitysolutionsllc/consultation";
+// Replace with your real Calendly link. Format: https://calendly.com/your-handle/intro-call
+const CALENDLY_URL = "https://calendly.com/technicalqualitysolutionsllc/30min";
 const EMAIL = "technicalqualitysolutionsllc@gmail.com";
 
 export const Route = createFileRoute("/")({
