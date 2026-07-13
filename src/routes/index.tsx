@@ -66,7 +66,8 @@ function Hero() {
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
             Technical Quality Solutions LLC helps cannabis operators and food manufacturers
             build compliant, audit-ready programs — from GMP and HACCP to state licensing and
-            supplier controls.
+            supplier controls. Led by a consultant certified in PCQI, HACCP, Seafood HACCP, and
+            Lean Six Sigma Green Belt.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
@@ -86,7 +87,7 @@ function Hero() {
             {[
               ["Industries", "Cannabis + Food"],
               ["Focus", "GMP · HACCP · SQF"],
-              ["Engagements", "Advisory + Hands-on"],
+              ["Credentials", "PCQI · Seafood HACCP · Lean Six Sigma"],
             ].map(([k, v]) => (
               <div key={k}>
                 <dt className="text-xs uppercase tracking-wider text-muted-foreground">{k}</dt>
@@ -113,7 +114,9 @@ function Hero() {
 function Trust() {
   const items = [
     "FDA & cGMP Compliance",
-    "HACCP / PCQI",
+    "PCQI Certified",
+    "HACCP & Seafood HACCP",
+    "Lean Six Sigma Green Belt",
     "State Cannabis Licensing",
     "SQF & BRCGS Prep",
     "Supplier & Label Review",
