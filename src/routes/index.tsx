@@ -61,11 +61,11 @@ function Hero() {
             QUALITY CONSULTING FOR THE FOOD AND CANNABIS INDUSTRIES
           </span>
           <h1 className="mt-6 font-display text-5xl leading-[1.05] text-primary md:text-6xl">
-            &nbsp;Practical quality systems that hold up to the realities of your operation
+            &nbsp;Practical quality systems that hold up to the realities of your operation.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
             Technical Quality Solutions LLC helps businesses build effective audit-ready
-            quality programs — Starting from the basics with implementing GMP all the way
+            quality programs — Starting from the basics with implementing GMP, all the way
             to control systems to ensure your operation is performing as it should. Each
             step of the process led by hands on and knowledgeable professionals.
           </p>
@@ -88,8 +88,12 @@ function Hero() {
             { label: "Industries", value: (
               <>
                 Cannabis&nbsp;<br />
+                CPGs<br />
                 Ready to Eat Foods
-                <div className="text-sm font-sans font-normal text-muted-foreground mt-0.5">{"\n"}</div>
+                <div className="text-sm font-sans font-normal text-muted-foreground mt-0.5">
+                  CPGs<br />
+                  Food Processing
+                </div>
               </>
             )},
             { label: "Focus", value: "Problem Solving Quality Systems Audit Readiness" },
