@@ -85,15 +85,15 @@ function Hero() {
           </div>
           <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-border pt-8">
           {[
-            ["Industries", (
+            { label: "Industries", value: (
               <>
                 Cannabis&nbsp;<br />
                 Ready to Eat Foods
                 <div className="text-sm font-sans font-normal text-muted-foreground mt-0.5">Food Processing</div>
               </>
-            )],
-            ["Focus", "Problem Solving Quality Systems Audit Readiness"],
-            ["Credentials", (
+            )},
+            { label: "Focus", value: "Problem Solving Quality Systems Audit Readiness" },
+            { label: "Credentials", value: (
               <>
                 PCQI<br />
                 HACCP<br />
@@ -103,11 +103,11 @@ function Hero() {
                   Lean Six Sigma
                 </div>
               </>
-            )],
-          ].map(([k, v]) => (
-              <div key={k}>
-                <dt className="text-xs uppercase tracking-wider text-muted-foreground">{k}</dt>
-                <dd className="mt-1 font-display text-base text-primary">{v}</dd>
+            )},
+          ].map((item) => (
+              <div key={item.label}>
+                <dt className="text-xs uppercase tracking-wider text-muted-foreground">{item.label}</dt>
+                <dd className="mt-1 font-display text-base text-primary">{item.value}</dd>
               </div>
             ))}
           </dl>
