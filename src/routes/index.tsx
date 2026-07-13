@@ -89,11 +89,7 @@ function Hero() {
               <>
                 Cannabis&nbsp;<br />
                 CPGs<br />
-                Ready to Eat Foods
-                <div className="text-sm font-sans font-normal text-muted-foreground mt-0.5">
-                  CPGs<br />
-                  Food Processing
-                </div>
+                Food Processing
               </>
             )},
             { label: "Focus", value: "Problem Solving Quality Systems Audit Readiness" },
