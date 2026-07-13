@@ -113,7 +113,9 @@ function Hero() {
 function Trust() {
   const items = [
     "FDA & cGMP Compliance",
-    "HACCP / PCQI",
+    "PCQI Certified",
+    "HACCP & Seafood HACCP",
+    "Lean Six Sigma Green Belt",
     "State Cannabis Licensing",
     "SQF & BRCGS Prep",
     "Supplier & Label Review",
