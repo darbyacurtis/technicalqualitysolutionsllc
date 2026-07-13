@@ -33,12 +33,12 @@ function Nav() {
           <span className="grid h-8 w-8 place-items-center rounded-md bg-primary text-primary-foreground">
             <Leaf className="h-4 w-4" />
           </span>
-          Technical Quality Solutions
+          Technical Quality Solutions LLC
         </a>
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
           <a href="#services" className="hover:text-foreground">Services</a>
-          <a href="#approach" className="hover:text-foreground">Approach</a>
-          <a href="#book" className="hover:text-foreground">Book a call</a>
+          <a href="#approach" className="hover:text-foreground">Our Approach</a>
+          <a href="#book" className="hover:text-foreground">Contact Us</a>
         </nav>
         <a
           href="#book"
@@ -64,10 +64,10 @@ function Hero() {
             Quality systems that <em className="not-italic text-accent">hold up</em> to inspection, market, and time.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Technical Quality Solutions LLC helps cannabis operators and food manufacturers
-            build compliant, audit-ready programs — from GMP and HACCP to state licensing and
-            supplier controls. Led by a consultant certified in PCQI, HACCP, Seafood HACCP, and
-            Lean Six Sigma Green Belt.
+            Technical Quality Solutions LLC helps businesses build effective audit-ready
+            quality programs — Starting from the basics with implementing GMP all the way
+            to control systems to ensure your operation is performing as it should. Each
+            step of the process led by hands on and knowledgeable professionals.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
@@ -85,13 +85,29 @@ function Hero() {
           </div>
           <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-border pt-8">
           {[
-            ["Industries", "Cannabis + Food"],
-            ["Focus", "Problem Solving · Quality System Building · Audit Readiness"],
-            ["Credentials", "PCQI · basic HACCP · Seafood HACCP · GMP · Lean Six Sigma Green Belt"],
-          ].map(([k, v]) => (
-              <div key={k}>
-                <dt className="text-xs uppercase tracking-wider text-muted-foreground">{k}</dt>
-                <dd className="mt-1 font-display text-base text-primary">{v}</dd>
+            { label: "Industries", value: (
+              <>
+                Cannabis&nbsp;<br />
+                Ready to Eat Foods
+                <div className="text-sm font-sans font-normal text-muted-foreground mt-0.5">Food Processing</div>
+              </>
+            )},
+            { label: "Focus", value: "Problem Solving Quality Systems Audit Readiness" },
+            { label: "Credentials", value: (
+              <>
+                PCQI<br />
+                HACCP<br />
+                Seafood HACCP · GMP · Lean Six Sigma Green Belt
+                <div className="text-sm font-sans font-normal text-muted-foreground mt-0.5">
+                  Seafood HACCP Advanced SQF&nbsp;<br />
+                  Lean Six Sigma
+                </div>
+              </>
+            )},
+          ].map((item) => (
+              <div key={item.label}>
+                <dt className="text-xs uppercase tracking-wider text-muted-foreground">{item.label}</dt>
+                <dd className="mt-1 font-display text-base text-primary">{item.value}</dd>
               </div>
             ))}
           </dl>
@@ -118,8 +134,8 @@ function Trust() {
     "HACCP & Seafood HACCP",
     "Lean Six Sigma Green Belt",
     "State Cannabis Licensing",
-    "SQF & BRCGS Prep",
-    "Supplier & Label Review",
+    "SQF PREP",
+    "SUPPLIER AUDITS & LABEL REVIEW",
   ];
   return (
     <section className="border-y border-border bg-cream/60">
@@ -140,13 +156,13 @@ function Services() {
       icon: Leaf,
       title: "Cannabis Quality & Compliance",
       body: "Cultivation, extraction, and infused-product operators trust us to design SOPs, track-and-trace workflows, and state-ready quality programs.",
-      points: ["Metrc & state audits", "GMP for cannabis", "Testing & COA review"],
+      points: ["Metrc & State audits", "Problem Solving & Process Improvement", "Testing & COA review"],
     },
     {
       icon: Utensils,
       title: "Food Safety & Manufacturing",
       body: "From co-manufacturers to specialty brands, we build risk-based food safety plans that pass FDA, third-party, and retailer audits.",
-      points: ["HACCP / FSMA plans", "SQF & BRCGS readiness", "Recall & mock traceability"],
+      points: ["HACCP / Food Safety Plans", "SQF readiness", "Recall & Traceability"],
     },
     {
       icon: ShieldCheck,
@@ -160,7 +176,8 @@ function Services() {
       <div className="max-w-2xl">
         <p className="text-xs font-medium uppercase tracking-widest text-accent">What we do</p>
         <h2 className="mt-3 text-4xl text-primary md:text-5xl">
-          Two regulated industries. One quality standard.
+          Two regulated industries.&nbsp;<br />
+          One quality standard.
         </h2>
         <p className="mt-4 text-muted-foreground">
           We work with growers, processors, co-manufacturers, and consumer brands to translate
@@ -196,18 +213,19 @@ function Services() {
 function Approach() {
   const steps = [
     { icon: ClipboardCheck, title: "Assess", body: "A structured gap analysis of your current programs against regulatory and commercial requirements." },
-    { icon: FlaskConical, title: "Design", body: "Practical SOPs, plans, and controls tailored to your facility, product, and team." },
-    { icon: BookOpenCheck, title: "Sustain", body: "Training, internal audits, and ongoing support so your quality system stays audit-ready." },
+    { icon: FlaskConical, title: "Design", body: "SOPs, plans, and controls tailored to your facility, products, and team." },
+    { icon: BookOpenCheck, title: "Sustain", body: "Training and ongoing support so your quality system stays audit-ready." },
   ];
   return (
     <section id="approach" className="bg-cream/60">
       <div className="mx-auto grid max-w-6xl gap-16 px-6 py-24 md:grid-cols-[1fr_1.4fr] md:items-start">
         <div className="md:sticky md:top-28">
           <p className="text-xs font-medium uppercase tracking-widest text-accent">Approach</p>
-          <h2 className="mt-3 text-4xl text-primary md:text-5xl">A calm, methodical path to compliance.</h2>
+          <h2 className="mt-3 text-4xl text-primary md:text-5xl">A hands-on, technical approach to quality.</h2>
           <p className="mt-4 text-muted-foreground">
-            No jargon dumps. No binder that never gets opened. We embed with your team and leave
-            behind systems people actually use.
+            No jargon dumps.&nbsp;<br /><br /><br />
+            No binder that never gets opened.&nbsp;<br /><br /><br />
+            We align with your team's needs and leave behind systems people actually use.
           </p>
         </div>
         <ol className="space-y-4">
@@ -249,12 +267,12 @@ function Booking() {
     <section id="book" className="mx-auto max-w-6xl px-6 py-24">
       <div className="grid gap-12 md:grid-cols-[1fr_1.4fr] md:items-start">
         <div>
-          <p className="text-xs font-medium uppercase tracking-widest text-accent">Book a call</p>
+          <p className="text-xs font-medium uppercase tracking-widest text-accent">BOOK A CONSULTATION</p>
           <h2 className="mt-3 text-4xl text-primary md:text-5xl">
-            Let's talk about your quality program.
+            Let's talk about your quality needs.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Pick a time that works for you. Free 30-minute intro to understand your operation,
+            Pick a time that works for you. We'll schedule a quick call to understand your operation,
             current gaps, and the fastest path forward.
           </p>
           <div className="mt-8 space-y-3 rounded-2xl border border-border bg-card p-6 text-sm">
@@ -262,7 +280,7 @@ function Booking() {
               <Mail className="h-4 w-4 text-accent" /> {EMAIL}
             </a>
             <p className="text-muted-foreground">
-              Prefer email? Send a note and we'll reply within one business day.
+              Prefer messaging instead of a call? Send us a note and we'll reach out as soon as we can
             </p>
           </div>
         </div>
