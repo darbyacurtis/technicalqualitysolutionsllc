@@ -4,7 +4,7 @@ import { Leaf, Utensils, ShieldCheck, ClipboardCheck, FlaskConical, BookOpenChec
 import heroImg from "@/assets/hero.jpg";
 
 // Replace with your real Calendly link. Format: https://calendly.com/your-handle/intro-call
-const CALENDLY_URL = "https://calendly.com/technicalqualitysolutionsllc/consultation";
+const CALENDLY_URL = "https://calendly.com/technicalqualitysolutionsllc/30min";
 const EMAIL = "technicalqualitysolutionsllc@gmail.com";
 
 export const Route = createFileRoute("/")({
