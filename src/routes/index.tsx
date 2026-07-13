@@ -156,13 +156,13 @@ function Services() {
       icon: Leaf,
       title: "Cannabis Quality & Compliance",
       body: "Cultivation, extraction, and infused-product operators trust us to design SOPs, track-and-trace workflows, and state-ready quality programs.",
-      points: ["Metrc & state audits", "GMP for cannabis", "Testing & COA review"],
+      points: ["Metrc & State audits", "Problem Solving & Process Improvement", "Testing & COA review"],
     },
     {
       icon: Utensils,
       title: "Food Safety & Manufacturing",
       body: "From co-manufacturers to specialty brands, we build risk-based food safety plans that pass FDA, third-party, and retailer audits.",
-      points: ["HACCP / FSMA plans", "SQF & BRCGS readiness", "Recall & mock traceability"],
+      points: ["HACCP / Food Safety Plans", "SQF readiness", "Recall & Traceability"],
     },
     {
       icon: ShieldCheck,
