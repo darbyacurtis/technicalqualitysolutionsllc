@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { Leaf, Utensils, ShieldCheck, ClipboardCheck, FlaskConical, BookOpenCheck, ArrowRight, Mail, CheckCircle2 } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 
-// Replace with your real Calendly link. Format: https://calendly.com/your-handle/intro-call
+https://calendly.com/technicalqualitysolutionsllc/30min
 const CALENDLY_URL = "https://calendly.com/technicalqualitysolutionsllc/consultation";
 const EMAIL = "technicalqualitysolutionsllc@gmail.com";
 
