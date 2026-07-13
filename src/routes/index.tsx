@@ -213,18 +213,19 @@ function Services() {
 function Approach() {
   const steps = [
     { icon: ClipboardCheck, title: "Assess", body: "A structured gap analysis of your current programs against regulatory and commercial requirements." },
-    { icon: FlaskConical, title: "Design", body: "Practical SOPs, plans, and controls tailored to your facility, product, and team." },
-    { icon: BookOpenCheck, title: "Sustain", body: "Training, internal audits, and ongoing support so your quality system stays audit-ready." },
+    { icon: FlaskConical, title: "Design", body: "SOPs, plans, and controls tailored to your facility, products, and team." },
+    { icon: BookOpenCheck, title: "Sustain", body: "Training and ongoing support so your quality system stays audit-ready." },
   ];
   return (
     <section id="approach" className="bg-cream/60">
       <div className="mx-auto grid max-w-6xl gap-16 px-6 py-24 md:grid-cols-[1fr_1.4fr] md:items-start">
         <div className="md:sticky md:top-28">
           <p className="text-xs font-medium uppercase tracking-widest text-accent">Approach</p>
-          <h2 className="mt-3 text-4xl text-primary md:text-5xl">A calm, methodical path to compliance.</h2>
+          <h2 className="mt-3 text-4xl text-primary md:text-5xl">A hands-on, technical approach to quality.</h2>
           <p className="mt-4 text-muted-foreground">
-            No jargon dumps. No binder that never gets opened. We embed with your team and leave
-            behind systems people actually use.
+            No jargon dumps.&nbsp;<br /><br /><br />
+            No binder that never gets opened.&nbsp;<br /><br /><br />
+            We align with your team's needs and leave behind systems people actually use.
           </p>
         </div>
         <ol className="space-y-4">
