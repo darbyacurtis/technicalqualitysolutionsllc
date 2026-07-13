@@ -58,10 +58,10 @@ function Hero() {
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium uppercase tracking-widest text-muted-foreground">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            Cannabis & Food Quality Consulting
+            QUALITY CONSULTING FOR THE FOOD AND CANNABIS INDUSTRIES
           </span>
           <h1 className="mt-6 font-display text-5xl leading-[1.05] text-primary md:text-6xl">
-            Quality systems that <em className="not-italic text-accent">hold up</em> to inspection, market, and time.
+            &nbsp;Practical quality systems that hold up to the realities of your operation
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
             Technical Quality Solutions LLC helps businesses build effective audit-ready
@@ -89,19 +89,17 @@ function Hero() {
               <>
                 Cannabis&nbsp;<br />
                 Ready to Eat Foods
-                <div className="text-sm font-sans font-normal text-muted-foreground mt-0.5">Food Processing</div>
+                <div className="text-sm font-sans font-normal text-muted-foreground mt-0.5">{"\n"}</div>
               </>
             )},
             { label: "Focus", value: "Problem Solving Quality Systems Audit Readiness" },
             { label: "Credentials", value: (
               <>
                 PCQI<br />
+                Advanced SQF<br />
                 HACCP<br />
-                Seafood HACCP · GMP · Lean Six Sigma Green Belt
-                <div className="text-sm font-sans font-normal text-muted-foreground mt-0.5">
-                  Seafood HACCP Advanced SQF&nbsp;<br />
-                  Lean Six Sigma
-                </div>
+                Seafood HACCP Lean Six Sigma Green Belt
+                <div className="text-sm font-sans font-normal text-muted-foreground mt-0.5">{"\n"}</div>
               </>
             )},
           ].map((item) => (
@@ -129,10 +127,10 @@ function Hero() {
 
 function Trust() {
   const items = [
-    "FDA & cGMP Compliance",
-    "PCQI Certified",
-    "HACCP & Seafood HACCP",
-    "Lean Six Sigma Green Belt",
+    "FDA & STATE COMPLIANCE",
+    "PCQI CERTIFIED CONSULTANT",
+    "SUPPLIER AUDITS & LABEL REVIEW",
+    "PROCESS MONITORING",
     "State Cannabis Licensing",
     "SQF PREP",
     "SUPPLIER AUDITS & LABEL REVIEW",
