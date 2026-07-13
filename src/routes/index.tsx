@@ -33,12 +33,12 @@ function Nav() {
           <span className="grid h-8 w-8 place-items-center rounded-md bg-primary text-primary-foreground">
             <Leaf className="h-4 w-4" />
           </span>
-          Technical Quality Solutions
+          Technical Quality Solutions LLC
         </a>
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
           <a href="#services" className="hover:text-foreground">Services</a>
-          <a href="#approach" className="hover:text-foreground">Approach</a>
-          <a href="#book" className="hover:text-foreground">Book a call</a>
+          <a href="#approach" className="hover:text-foreground">Our Approach</a>
+          <a href="#book" className="hover:text-foreground">Contact Us</a>
         </nav>
         <a
           href="#book"
