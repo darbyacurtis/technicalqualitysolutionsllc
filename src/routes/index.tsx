@@ -116,7 +116,7 @@ function Hero() {
           <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-accent/20 to-primary/10 blur-2xl" aria-hidden />
           <img
             src={heroImg}
-            alt="Quality consultant reviewing cannabis and food samples in a laboratory"
+            alt="Quality control charts and product specification documents on a desk"
             width={1600}
             height={1104}
             className="relative aspect-[4/5] w-full rounded-2xl object-cover shadow-[var(--shadow-soft)]"
