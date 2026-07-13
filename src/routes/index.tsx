@@ -134,8 +134,8 @@ function Trust() {
     "HACCP & Seafood HACCP",
     "Lean Six Sigma Green Belt",
     "State Cannabis Licensing",
-    "SQF & BRCGS Prep",
-    "Supplier & Label Review",
+    "SQF PREP",
+    "SUPPLIER AUDITS & LABEL REVIEW",
   ];
   return (
     <section className="border-y border-border bg-cream/60">
