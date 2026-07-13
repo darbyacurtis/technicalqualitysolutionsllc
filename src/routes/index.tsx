@@ -85,9 +85,25 @@ function Hero() {
           </div>
           <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-border pt-8">
           {[
-            ["Industries", "Cannabis + Food"],
-            ["Focus", "Problem Solving · Quality System Building · Audit Readiness"],
-            ["Credentials", "PCQI · basic HACCP · Seafood HACCP · GMP · Lean Six Sigma Green Belt"],
+            ["Industries", (
+              <>
+                Cannabis&nbsp;<br />
+                Ready to Eat Foods
+                <div className="text-sm font-sans font-normal text-muted-foreground mt-0.5">Food Processing</div>
+              </>
+            )],
+            ["Focus", "Problem Solving Quality Systems Audit Readiness"],
+            ["Credentials", (
+              <>
+                PCQI<br />
+                HACCP<br />
+                Seafood HACCP · GMP · Lean Six Sigma Green Belt
+                <div className="text-sm font-sans font-normal text-muted-foreground mt-0.5">
+                  Seafood HACCP Advanced SQF&nbsp;<br />
+                  Lean Six Sigma
+                </div>
+              </>
+            )],
           ].map(([k, v]) => (
               <div key={k}>
                 <dt className="text-xs uppercase tracking-wider text-muted-foreground">{k}</dt>
