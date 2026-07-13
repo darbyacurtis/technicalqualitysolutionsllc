@@ -64,10 +64,10 @@ function Hero() {
             Quality systems that <em className="not-italic text-accent">hold up</em> to inspection, market, and time.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Technical Quality Solutions LLC helps cannabis operators and food manufacturers
-            build compliant, audit-ready programs — from GMP and HACCP to state licensing and
-            supplier controls. Led by a consultant certified in PCQI, HACCP, Seafood HACCP, and
-            Lean Six Sigma Green Belt.
+            Technical Quality Solutions LLC helps businesses build effective audit-ready
+            quality programs — Starting from the basics with implementing GMP all the way
+            to control systems to ensure your operation is performing as it should. Each
+            step of the process led by hands on and knowledgeable professionals.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
