@@ -1,13 +1,23 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
-import { Leaf, Utensils, ShieldCheck, ClipboardCheck, FlaskConical, BookOpenCheck, ArrowRight, Mail, CheckCircle2 } from "lucide-react";
+import { Utensils, Factory, ShieldCheck, ClipboardCheck, FlaskConical, BookOpenCheck, ArrowRight, Mail, CheckCircle2 } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
+import { Nav, Footer, EMAIL } from "@/components/site-chrome";
 
 // Replace with your real Calendly link. Format: https://calendly.com/your-handle/intro-call
 const CALENDLY_URL = "https://calendly.com/technicalqualitysolutionsllc/30min";
-const EMAIL = "technicalqualitysolutionsllc@gmail.com";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Food Safety & Quality Consulting | Technical Quality Solutions LLC" },
+      { name: "description", content: "PCQI-certified food safety and quality consulting: HACCP, SQF readiness, GMP programs, audits, and process control for food manufacturers and CPG brands." },
+      { property: "og:title", content: "Food Safety & Quality Consulting | Technical Quality Solutions LLC" },
+      { property: "og:description", content: "PCQI-certified food safety and quality consulting: HACCP, SQF readiness, GMP programs, audits, and process control for food manufacturers and CPG brands." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Landing,
 });
 
@@ -25,31 +35,6 @@ function Landing() {
   );
 }
 
-function Nav() {
-  return (
-    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" className="flex items-center gap-2 font-display text-lg font-semibold text-primary">
-          <span className="grid h-8 w-8 place-items-center rounded-md bg-primary text-primary-foreground">
-            <Leaf className="h-4 w-4" />
-          </span>
-          Technical Quality Solutions LLC
-        </a>
-        <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
-          <a href="#services" className="hover:text-foreground">Services</a>
-          <a href="#approach" className="hover:text-foreground">Our Approach</a>
-          <a href="#book" className="hover:text-foreground">Contact Us</a>
-        </nav>
-        <a
-          href="#book"
-          className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition hover:opacity-90"
-        >
-          Schedule <ArrowRight className="h-3.5 w-3.5" />
-        </a>
-      </div>
-    </header>
-  );
-}
 
 function Hero() {
   return (
@@ -58,7 +43,7 @@ function Hero() {
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium uppercase tracking-widest text-muted-foreground">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            QUALITY CONSULTING FOR THE FOOD AND CANNABIS INDUSTRIES
+            FOOD SAFETY & QUALITY CONSULTING
           </span>
           <h1 className="mt-6 font-display text-5xl leading-[1.05] text-primary md:text-6xl">
             &nbsp;Practical quality systems that hold up to the realities of your operation.
@@ -131,7 +116,7 @@ function Trust() {
     "PCQI CERTIFIED CONSULTANT",
     "SUPPLIER AUDITS & LABEL REVIEW",
     "PROCESS MONITORING",
-    "State Cannabis Licensing",
+    "HACCP PLANS",
     "SQF PREP",
     "SUPPLIER AUDITS & LABEL REVIEW",
   ];
@@ -151,16 +136,16 @@ function Trust() {
 function Services() {
   const services = [
     {
-      icon: Leaf,
-      title: "Cannabis Quality & Compliance",
-      body: "Cultivation, extraction, and infused-product operators trust us to design SOPs, track-and-trace workflows, and state-ready quality programs.",
-      points: ["Metrc & State audits", "Problem Solving & Process Improvement", "Testing & COA review"],
-    },
-    {
       icon: Utensils,
       title: "Food Safety & Manufacturing",
       body: "From co-manufacturers to specialty brands, we build risk-based food safety plans that pass FDA, third-party, and retailer audits.",
       points: ["HACCP / Food Safety Plans", "SQF readiness", "Recall & Traceability"],
+    },
+    {
+      icon: Factory,
+      title: "Process Control & Improvement",
+      body: "Practical GMP programs, process monitoring, and problem solving that keep your line consistent and your product in spec.",
+      points: ["GMP programs", "Process monitoring & SPC", "Root cause & CAPA"],
     },
     {
       icon: ShieldCheck,
@@ -174,11 +159,11 @@ function Services() {
       <div className="max-w-2xl">
         <p className="text-xs font-medium uppercase tracking-widest text-accent">What we do</p>
         <h2 className="mt-3 text-4xl text-primary md:text-5xl">
-          Two regulated industries.&nbsp;<br />
-          One quality standard.
+          Food safety and quality,&nbsp;<br />
+          built for real operations.
         </h2>
         <p className="mt-4 text-muted-foreground">
-          We work with growers, processors, co-manufacturers, and consumer brands to translate
+          We work with food processors, co-manufacturers, and consumer brands to translate
           regulation into practical, day-to-day quality systems.
         </p>
       </div>
@@ -295,26 +280,3 @@ function Booking() {
   );
 }
 
-function Footer() {
-  return (
-    <footer className="border-t border-border bg-primary text-primary-foreground">
-      <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between">
-        <div className="flex items-center gap-3">
-          <span className="grid h-8 w-8 place-items-center rounded-md bg-primary-foreground/10">
-            <Leaf className="h-4 w-4" />
-          </span>
-          <div>
-            <p className="font-display text-base">Technical Quality Solutions LLC</p>
-            <p className="text-xs text-primary-foreground/70">Cannabis & Food Quality Consulting</p>
-          </div>
-        </div>
-        <div className="text-sm text-primary-foreground/80">
-          <a href={`mailto:${EMAIL}`} className="hover:text-primary-foreground">{EMAIL}</a>
-        </div>
-        <p className="text-xs text-primary-foreground/60">
-          © {new Date().getFullYear()} Technical Quality Solutions LLC. All rights reserved.
-        </p>
-      </div>
-    </footer>
-  );
-}

@@ -86,8 +86,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Technical Quality Solutions LLC — Quality Consulting" },
       { name: "twitter:description", content: "Expert quality, compliance, and food safety consulting for cannabis and food manufacturers. Schedule a consultation with Technical Quality Solutions LLC." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f251145-5b9c-43f6-856f-35cd2e1103e8/id-preview-7229ea30--f4b69fb8-cc21-45cc-a865-0841e058c835.lovable.app-1783963682221.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f251145-5b9c-43f6-856f-35cd2e1103e8/id-preview-7229ea30--f4b69fb8-cc21-45cc-a865-0841e058c835.lovable.app-1783963682221.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

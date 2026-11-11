@@ -1,0 +1,3 @@
+- [x] Food-first homepage, cannabis page
+- [x] Blog stored in Lovable Cloud with private writing page
+- [ ] Security package update
