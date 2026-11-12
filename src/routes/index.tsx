@@ -72,9 +72,9 @@ function Hero() {
           {[
             { label: "Industries", value: (
               <>
-                Cannabis&nbsp;<br />
-                CPGs<br />
-                Food Processing
+                Food Ingredients<br />
+                Seafood<br />
+                Consumer Goods
               </>
             )},
             { label: "Focus", value: "Problem Solving Quality Systems Audit Readiness" },
