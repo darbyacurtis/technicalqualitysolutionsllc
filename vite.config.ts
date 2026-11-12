@@ -6,7 +6,12 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+// The wrapper forwards Nitro options but exposes only a subset in its public type.
+const nitroOptions: { preset?: string; renderer: false } = { renderer: false };
+
 export default defineConfig({
+  // TanStack Start renders pages; do not auto-detect the legacy index.html as a Nitro template.
+  nitro: nitroOptions,
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this

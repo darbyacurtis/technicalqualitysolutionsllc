@@ -8,3 +8,4 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+- Disable Nitro's standalone renderer in Vite config because TanStack Start owns page rendering and the legacy root index.html is not an HTML template.

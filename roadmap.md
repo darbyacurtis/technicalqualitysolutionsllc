@@ -1,3 +1,4 @@
 - [x] Food-first homepage, cannabis page
 - [x] Blog stored in Lovable Cloud with private writing page
-- [ ] Security package update
+- [x] Security package update
+- [x] Fix Nitro renderer-template parsing failure and verify the website loads
